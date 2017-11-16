@@ -18,7 +18,7 @@ class Datastructures():
 
     def create_new_dict_upper_last_name(self):
         newDict = {}
-        for key, val in self.dict.iteritems():
+        for key, val in self.dict.items():
             newDict[key] = [val[0], val[1].upper(), val[2]]
         return newDict
 
