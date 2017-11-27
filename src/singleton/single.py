@@ -10,5 +10,5 @@ class Single:
             Single.instance = Single.__single__(arg)
         else:
             Single.instance.val = arg
-    def getValue(self):
+    def get_value(self):
         return Single.instance.val

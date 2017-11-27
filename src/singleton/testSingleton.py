@@ -6,13 +6,13 @@ class TestSingleton(unittest.TestCase):
 
     def test_only_one_instance(self):
         x = Single('golf')
-        self.assertEqual(x.getValue(), 'golf')
+        self.assertEqual(x.get_value(), 'golf')
         y = Single('bowling')
-        self.assertEqual(y.getValue(), 'bowling')
+        self.assertEqual(y.get_value(), 'bowling')
         z = Single('darts')
-        self.assertEqual(z.getValue(), 'darts')
-        self.assertEqual(y.getValue(), 'darts')
-        self.assertEqual(x.getValue(), 'darts')
+        self.assertEqual(z.get_value(), 'darts')
+        self.assertEqual(y.get_value(), 'darts')
+        self.assertEqual(x.get_value(), 'darts')
 
 if __name__ == '__main__':
     unittest.main()
