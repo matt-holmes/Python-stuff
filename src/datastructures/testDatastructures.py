@@ -1,12 +1,9 @@
 import unittest
-import sys
-import os.path
-sys.path.append(os.path.join(os.path.dirname(__file__)+'/..', '..'))
-from src import datastructures
+from datastructures import Datastructures
 
 class TestDatastructures(unittest.TestCase):
 
-    inst = datastructures.Datastructures()
+    inst = Datastructures()
 
     def test_get_age_from_name_from_dictionary(self):
         self.assertEqual(self.inst.get_age_from_name_from_dict('Jon'), 18)
