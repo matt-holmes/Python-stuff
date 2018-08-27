@@ -3,7 +3,7 @@ def getSoundEx(str):
     soundExStr = charList[0]
     charList.pop(0)
     soundExCodes = {
-        'aehIouwy' : False,
+        'aehiouwy' : False,
         'bfpv' : '1',
         'cgjkqsxz' : '2',
         'dt' : '3',
