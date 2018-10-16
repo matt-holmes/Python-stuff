@@ -8,6 +8,6 @@ l2 = l1[:]
 l3 = copy.deepcopy(l1)
 l1[2]['tennis'] = 'ball'
 
-def test_get_sound_ex():
-    assert l2[2]['tennis'] == 'ball'
+def test_deep_copy():
+    assert l1[2]['tennis'] == 'ball'
     assert l3[2]['tennis'] == 'racket'
