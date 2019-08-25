@@ -15,4 +15,4 @@ class TestSingleton(unittest.TestCase):
         self.assertEqual(x.get_value(), 'darts')
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main()sdafasdfasdf
